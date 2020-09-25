@@ -1,0 +1,49 @@
+{
+  "name": "fullstack_varshard_41095c10-fbbb-11ea-b499-073c2880d0d1",
+  "version": "1.0.0",
+  "description": "Please don't disclose this assignment with anyone.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appsynth-org/Fullstack_varshard_41095c10-fbbb-11ea-b499-073c2880d0d1.git"
+  },
+  "author": "bhoomtawath@protonmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/appsynth-org/Fullstack_varshard_41095c10-fbbb-11ea-b499-073c2880d0d1/issues"
+  },
+  "homepage": "https://github.com/appsynth-org/Fullstack_varshard_41095c10-fbbb-11ea-b499-073c2880d0d1#readme",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest",
+    "prettier": "prettier --write"
+  },
+  "jest": {
+    "verbose": true,
+    "testEnvironment": "node",
+    "roots": [
+      "<rootDir>/src/",
+      "<rootDir>/tests/"
+    ]
+  },
+  "dependencies": {
+    "@koa/router": "^9.4.0",
+    "atob": "^2.1.2",
+    "btoa": "^1.2.1",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-joi-router": "^6.0.2",
+    "koa-mount": "^4.0.0",
+    "koa-pino-logger": "^3.0.0",
+    "koa-static": "^5.0.0",
+    "mongoose": "^5.10.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.11.0",
+    "jest": "^26.4.2",
+    "pino-pretty": "^4.2.1",
+    "prettier": "^2.1.2",
+    "supertest": "^4.0.2"
+  }
+}
