@@ -1,0 +1,17 @@
+version: '3.3'
+
+services:
+  mongodb:
+    image: mongo:4
+
+  url-shortener:
+    build: ./
+    links:
+      - mongodb
+    depends_on:
+      - mongodb
+    ports:
+      - "3000:3000"
+    environment:
+      HOST_URL: http://0.0.0.0:3000
+      DB_URL: mongodb://mongodb:27017/urlShortener
